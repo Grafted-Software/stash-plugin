@@ -11,6 +11,7 @@
   "homepage": "https://stash.graftedsoftware.com/agents",
   "repository": "https://github.com/Grafted-Software/stash-plugin",
   "license": "MIT",
+  "privacyPolicyUrl": "https://stash.graftedsoftware.com/legal/privacy",
   "keywords": [
     "notes",
     "notebook",
