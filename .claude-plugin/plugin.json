@@ -1,0 +1,21 @@
+{
+  "name": "stash",
+  "displayName": "Stash",
+  "version": "0.2.0",
+  "description": "Search, read, and save notes in your Stash notebook, and ask questions over them (Stash Pro). Connects to Stash's remote MCP server with OAuth.",
+  "author": {
+    "name": "Grafted Software",
+    "email": "support@graftedsoftware.com",
+    "url": "https://stash.graftedsoftware.com"
+  },
+  "homepage": "https://stash.graftedsoftware.com/agents",
+  "repository": "https://github.com/Grafted-Software/stash-plugin",
+  "license": "MIT",
+  "keywords": [
+    "notes",
+    "notebook",
+    "memory",
+    "inbox",
+    "search"
+  ]
+}

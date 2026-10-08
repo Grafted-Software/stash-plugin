@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "stash",
+  "version": "0.1.0",
+  "description": "Summarize a rough note into a structured card, then search and ask over that Stash notebook.",
+  "author": {
+    "name": "Grafted Software",
+    "email": "support@graftedsoftware.com",
+    "url": "https://stash.graftedsoftware.com"
+  },
+  "homepage": "https://stash.graftedsoftware.com/agents",
+  "repository": "https://github.com/Grafted-Software/stash",
+  "keywords": ["notes", "notebook", "search", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Stash",
+        "shortDescription": "Summarize, search, and ask",
+        "longDescription": "Stash is a personal notebook. This plugin connects a Stash account over remote MCP.\n\nSummarize saves a rough text note and the Stash server turns it into a structured card. Search finds notes by keyword. Ask answers a question from the signed-in user's notes only, with no web search.\n\nFree accounts can search, read, and save notes within a monthly allowance. Ask needs Stash Pro. Sign in with the same Apple or Google account as the Stash app. Leave the OAuth client id and secret blank; Stash uses dynamic client registration.\n\nNotes are encrypted at rest. Connecting an agent decrypts them on Stash servers so tools can run — the same decryption the server already uses to summarize a note. This is not zero-knowledge. Revoke the connector, or delete the Stash account, to stop access.\n\nSetup and privacy: https://stash.graftedsoftware.com/agents",
+        "developerName": "Grafted Software",
+        "category": "Productivity",
+        "capabilities": ["Summarize a note", "Search notes", "Ask your notes"],
+        "websiteURL": "https://stash.graftedsoftware.com",
+        "privacyPolicyURL": "https://stash.graftedsoftware.com/legal/privacy",
+        "termsOfServiceURL": "https://stash.graftedsoftware.com/legal/terms",
+        "supportURL": "https://stash.graftedsoftware.com/agents",
+        "defaultPrompt": [
+          "Search my Stash notes for the Hawaii trip.",
+          "Stash this: renew the car registration next month.",
+          "What did I save about flights?"
+        ],
+        "brandColor": "#ff385c"
+      }
+    }
+  }
+}
