@@ -9,12 +9,10 @@ Free accounts work. The remote MCP server is `https://stash.graftedsoftware.com/
 
 ## Steps
 
-1. Call `stash_me`. If the plan is free and `cooks_used` has reached `cook_limit`, tell the user this month's free summaries are used up and when they reset (`quota_resets_at`), then stop. Do not invent a note.
+1. Call `stash_me`. If the plan is free and `summaries_used` has reached `summary_limit`, tell the user this month's free summaries are used up and when they reset (`quota_resets_at`), then stop. Do not invent a note.
 2. Call `stash_create` with the user's text in `raw_text`. This path is text only. Do not claim images were attached.
 3. Read the returned note id and status. Summarizing is asynchronous and happens once. Do not create a second note to retry the same text.
-4. Call `stash_get` with that id. If status is `queued` or `cooking`, tell the user it is still summarizing and check that same id again later. If status is `cooked`, show the title and summary. If status is `error`, show the error and leave the raw text in place.
-
-The status values `cooking` and `cooked` are what the API returns. Say "summarizing" and "summarized" to the user.
+4. Call `stash_get` with that id. If status is `queued` or `summarizing`, tell the user it is still summarizing and check that same id again later. If status is `summarized`, show the title and summary. If status is `error`, show `summary_error` and leave the raw text in place. If status is `upgrade_required`, the note is saved and summarizes when the monthly allowance resets.
 
 ## Do not
 
