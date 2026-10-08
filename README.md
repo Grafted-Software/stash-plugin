@@ -31,7 +31,7 @@ This plugin has no local code. It declares one remote MCP server, `https://stash
 
 - Claude sends tool calls (search queries, note text you ask it to save, note ids) to that server, authenticated with an OAuth token you grant on the consent screen.
 - Notes are encrypted at rest (AES-256-GCM). They are not zero-knowledge: the server decrypts them to run tools, the same way it already does to summarize a note.
-- To summarize, research, and answer questions, the server sends note text to a model provider through OpenRouter.
+- To summarize, research, and answer questions, the server sends note text to Anthropic (Claude), via OpenRouter. Summaries and research also use OpenRouter's web search. To decide whether a summary should use web search, it sends up to 2,000 characters of the note to TypeSafe (Jev), via OpenRouter.
 - Audit logs record the action, note id, and client id. They never record note bodies or search text.
 
 To stop access, remove the connector in Claude or delete your Stash account in the app.
