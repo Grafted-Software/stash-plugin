@@ -9,14 +9,14 @@
     "url": "https://stash.graftedsoftware.com"
   },
   "homepage": "https://stash.graftedsoftware.com/agents",
-  "repository": "https://github.com/Grafted-Software/stash",
+  "repository": "https://github.com/Grafted-Software/stash-plugin",
   "keywords": ["notes", "notebook", "search", "mcp"],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Stash",
         "shortDescription": "Summarize, search, and ask",
-        "longDescription": "Stash is a personal notebook. This plugin connects a Stash account over remote MCP.\n\nSummarize saves a rough text note and the Stash server turns it into a structured card. Search finds notes by keyword. Ask answers a question from the signed-in user's notes only, with no web search.\n\nFree accounts can search, read, and save notes within a monthly allowance. Ask needs Stash Pro. Sign in with the same Apple or Google account as the Stash app. Leave the OAuth client id and secret blank; Stash uses dynamic client registration.\n\nNotes are encrypted at rest. Connecting an agent decrypts them on Stash servers so tools can run — the same decryption the server already uses to summarize a note. This is not zero-knowledge. Revoke the connector, or delete the Stash account, to stop access.\n\nSetup and privacy: https://stash.graftedsoftware.com/agents",
+        "longDescription": "Stash is a personal notebook. This plugin connects a Stash account over remote MCP.\n\nSummarize saves a rough text note and the Stash server turns it into a structured card. Search finds notes by keyword. Ask answers a question from the signed-in user's notes only, with no web search.\n\nFree accounts can search, read, and save notes within a monthly allowance. Ask needs Stash Pro. Sign in with the same Apple or Google account as the Stash app. Leave the OAuth client id and secret blank; Stash uses dynamic client registration.\n\nNotes are encrypted at rest. Connecting an agent decrypts them on Stash servers so tools can run. This is the same decryption the server already uses to summarize a note. This is not zero-knowledge. Revoke the connector, or delete the Stash account, to stop access.\n\nSetup and privacy: https://stash.graftedsoftware.com/agents",
         "developerName": "Grafted Software",
         "category": "Productivity",
         "capabilities": ["Summarize a note", "Search notes", "Ask your notes"],
