@@ -1,4 +1,4 @@
-# Stash
+# Stash: Remember Everything by Grafted Software.
 
 Stash is an AI notebook for iPhone. Share anything into it, such as a link, a screenshot, a photo, or a rough thought, and the Stash server turns it into a structured note with a title, summary, sections, tags, and sources. This plugin lets Claude read and add to that notebook.
 
