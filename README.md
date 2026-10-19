@@ -1,6 +1,6 @@
 # Stash: Remember Everything by Grafted Software
 
-Stash is an AI notebook for iPhone. Share anything into it, such as a link, a screenshot, a photo, or a rough thought, and the Stash server turns it into a structured note with a title, summary, sections, tags, and sources. This plugin lets Claude read and add to that notebook.
+Stash is an AI notebook for iPhone. Share anything into it, such as a link, a screenshot, a photo, or a rough thought, and the Stash server turns it into a structured note with a title, summary, sections, tags, and sources. This plugin lets Claude read and add to that notebook. Stash itself works with any MCP client, not only Claude: ChatGPT, Cursor, Grok, Gemini CLI and others connect to the same server. Setup for each is at https://stash.graftedsoftware.com/agents.
 
 ## What you can do
 
